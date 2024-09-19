@@ -1,0 +1,923 @@
+ *{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+ }
+
+
+ :root{
+    --active-color:#FF6600;
+    --bg-color:#F5F5F5;
+    --footer:#8FD14F;
+    --card-color:#604CC3;
+    --whitsomke: #e8e8e8;
+    --text-color: #000000;
+
+ }
+
+.layout{
+    width: 100%;
+    background: var(--whitsomke);
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 0px 30px;
+ 
+}
+
+.main_body{
+    width: 100%;
+   
+    display: flex;
+    gap: 0.5rem;
+    
+
+}
+.aside_container{
+     
+    
+    width: 25%;
+    background-color:var(--whitsomke);
+    padding: 75px 0px;
+    gap: 1.5rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 444;
+}
+
+ 
+
+/*========== Header section css start ============ */
+
+header{
+    width: 100%;
+    height: 65px;
+    background: var(--footer);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 40px;
+    border-bottom: 2px solid var(--active-color);
+    position: relative;
+    z-index: 99999;
+}
+
+header .logo_brand{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .logo_brand span{
+    font-size: 35px;
+    font-weight: 700;
+    background: var(--active-color);
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    border-radius: 50%;
+    color: var(--bg-color);
+}
+
+header .logo_brand h1{
+    color: var(--active-color);
+    font-size: 34px;
+    font-weight: 700;
+}
+
+  
+
+nav ul{
+    display: flex  ;
+    justify-content: center  ;
+    gap: 1rem  ;
+
+}
+ .active{
+    display: flex  ;
+
+
+}
+
+
+nav ul li a{
+    color: var(--bg-color);
+     font-size: 18px;
+     font-weight: 600;
+     text-transform: uppercase;
+
+}
+.active{
+    color:var(--active-color);
+}
+
+.pending{
+color:var(--active-color);
+}
+
+.search_box{
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.search_box .input_boxx input{
+   display: flex;
+    outline: 0;
+    padding-left: 12px;
+    width: 230px;
+    height: 45px;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 500;
+    border: 1px solid var(--card-color);
+}
+
+.search_box .input_boxx button{
+    border: 0;
+    outline: 0;
+    background: var(--bg-color);
+    color: var(--active-color);
+    font-size: 24px;
+     border-radius: 50%;
+     width: 40px;
+     height: 40px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+
+.search_box .input_boxx input:focus{
+    border: 2px solid var(--active-color);
+}
+
+ 
+.search_box .input_boxx {
+    width: 100%;
+    position: relative;
+}
+ 
+.search_box .input_boxx input{
+    position: absolute;
+    top: 53px;
+    left: -200px;
+}
+
+ 
+.search_box .nav_bar button{
+    font-size: 25px;
+    color: var(--bg-color);
+    cursor: pointer;
+    display: none;
+    border: 0;
+    outline: 0;
+    background: var(--bg-color);
+    color: var(--active-color);
+    padding: 2px;
+}
+ 
+/*========== Header section css end ============ */
+
+
+/*============ Home container css start ============= */
+
+    .home_conainer{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+    .home_conainer{
+        width: 75%;
+        background-color:var(--whitsomke);
+        padding: 50px 0px;
+    }
+/*============ Home container css end ============= */
+
+/*=========== category section css start ========== */
+
+.category_container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 12px;
+    background: var(--whitsomke);
+
+}
+
+.page_header{
+    width: 100%;
+    text-align: left;
+    padding: 20px 40px;
+    
+}
+.page_header h2{
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--text-color);
+}
+
+.caterogy_main_card{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.button_group{
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 40px 0px;
+}
+
+.load_more_btn{
+border: 0;
+outline: 0;
+background-color: var(--active-color);
+color: var(--bg-color);
+padding: 9px 16px;
+font-size: 18px;
+font-weight: 600;
+cursor: pointer;
+}
+.load_more_btn:hover{
+background-color: var(--footer);
+}
+
+
+/*=========== category section css start ========== */
+
+
+/*========== post card section css start ============ */
+
+.singlePost{
+    width: 31%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: var(--bg-color);
+    padding: 10px;
+    color: var(--text-color);
+}
+
+.singlePost .image_box{
+    width: 100%;
+    height: 200px;
+}
+.singlePost .image_box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.singlePost  .post_infos{
+    width: 100%;
+    display: flex;
+    text-align: left;
+    gap: 2rem;
+    padding: 8px 0px;
+}
+.singlePost .post_infos{
+    width: 100%;
+    display: flex;
+    text-align: left;
+    gap: 2rem;
+    padding: 8px 0px;
+}
+
+.singlePost .post_infos span{
+ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 18px;
+    font-weight:500;
+}
+
+.singlePost .post_info{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.singlePost .post_info h2{
+     font-size: 26px;
+     font-weight: 700;
+}
+
+.singlePost .post_info p{
+     font-size: 18px;
+     font-weight: 500;
+}
+ 
+/*========== post card section css end ============ */
+
+/*============ singlepost section css start ============ */
+
+.single_post_wrapper{
+    width: 75%;
+    background-color: var(--whitsomke);
+    padding: 15px;
+    
+}
+ 
+.single_post_card{
+    width: 100%;
+    padding: 60px 0px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    flex-direction: column;
+}
+.image_boxx{
+    width: 100%;
+    min-height: 500px;
+}
+.image_boxx img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.post_auth_info{
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+}
+.post_auth_info span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.post_details{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    flex-direction: column;
+}
+
+.post_details h1{
+    font-size: 33px;
+    font-weight: 700;
+}
+.post_details p{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+
+/*============ singlepost section css end ============ */
+
+
+
+/*========== featureheader section css start =========== */
+
+
+.featureheader{
+    width: 100%;
+    background: var(--active-color);
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.featureheader h1{
+    font-size: 32px;
+    color: var(--bg-color);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/*========== featureheader section css start =========== */
+
+
+/* ============featurecard section css start ============= */
+.features_card_wrapper{
+    display: inline-block;
+    width: 100%;
+   
+}
+
+.feature_main_card{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 4px;
+    background: var(--bg-color);
+    padding: 10px;
+}
+.image_box{
+    width: 100%;
+    height: 150px;
+}
+.image_box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.post-auth-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.post-auth-info span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 14px;
+     font-weight: 600;
+     color: var(--text-color);
+}
+
+.post-info h2{
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text-color);
+}
+.post-info p{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    color: var(--text-color);
+    padding-top: 15px;
+}
+
+
+
+
+/* ============featurecard section css end ============= */
+
+/*========== ads section css start ============ */
+
+.adscrad{
+    width: 100%;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-color);
+    
+   
+}
+.adscrad h1{
+    color: var(--active-color);
+    font-size: 35px;
+    font-weight: bold;
+    text-transform: uppercase;
+   
+}
+
+/*========== ads section css end ============ */
+
+/* ============ most view section css start ============ */
+
+.most_view_post_wrapper{
+    width: 100%;
+    background: var(--bg-color);
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.most_view_post_wrapper > h1{
+    width: 100%;
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--bg-color);
+    text-transform: uppercase;
+    background: var(--active-color);
+    padding: 12px 0px;
+    text-align: center;
+}
+.post_card{
+    width: 100%;
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
+    border-bottom: 2px solid var(--active-color);
+    gap: 0.8rem;
+    padding: 8px;
+}
+.image_box{
+    width: 120px;
+    height: 60px;
+}
+/* ============ most view section css end ============ */
+
+/* ======= categrory tag section css start ====== */
+
+.category_tag_wrapper{
+    width: 100%;
+    background: var(--bg-color);
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+}
+.category_tag_wrapper h1{
+    width: 100%;
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--bg-color);
+    text-transform: uppercase;
+    background: var(--active-color);
+    padding: 12px 0px;
+    text-align: center;
+}
+
+
+.category_box_container{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+}
+.category_item{
+    text-decoration: none;
+    color: var(--active-color);
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--text-color);
+}
+
+.category_item span{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.tag_container{
+    width: 100%;
+    background-color: var(--white-color);
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 10px;
+}
+.tag_container h1{
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: 600;
+    padding: 10px;
+    background-color: var(--active-color);
+    color: var(--white-color);
+}
+.tag_wrapper{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: 10px 5px;
+}
+.tag{
+    flex-grow: 1;
+    padding: 6px 12px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: var(--active-color);
+    color: var(--bg-color);
+    text-decoration: none;
+}
+.tag:hover{
+    background-color: red;
+}
+
+/* ========== categrory tag section css end ====== */
+
+
+/* =========== Footer section css start ============ */
+
+.main_footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    flex-direction: column;
+}
+
+
+.footer_container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px 0px;
+ background-color: var(--footer);
+ border-top: 5px solid var(--active-color);
+}
+.footer_box{
+    width: 32%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 10px;
+   
+}
+
+ .footer_brand{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ .footer_brand span{
+    font-size: 35px;
+    font-weight: 700;
+    background: var(--active-color);
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    border-radius: 50%;
+    color: var(--bg-color);
+}
+
+ .footer_brand h1{
+    color: var(--bg-color);
+    font-size: 34px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.footer_box p{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    color: var(--text-color);
+}
+
+.footer_icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.footer_icons a{
+     font-size: 22px;
+     color: var(--whitsomke);
+     width: 40px;
+     height: 40px;
+    align-items: center;
+    justify-content: center;
+display: flex;
+     background: var(--active-color);
+     border-radius: 50%;
+}
+
+.footer_icons a:hover{
+    background: var(--card-color);
+    color: var(--bg-color);
+    transition: 0.2s linear;
+}
+
+.last_footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 0;
+    color: var(--bg-color);
+    background: var(--active-color);
+}
+
+.last_footer p{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* =========== Footer section css end ============ */
+
+
+
+
+
+/*========== Header section responsive start ============ */
+
+@media screen and (max-width:830px) {
+    nav{
+       display: none;
+        position: absolute;
+        top: 65px;
+        right: 0;
+        width: 300px;
+        background-color: var(--footer);
+        padding: 45px 0px;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    nav ul{
+        flex-direction: column;
+    }
+    nav ul li{
+        text-align: left;
+        width: 100px;
+        
+    }
+
+    .search_box .nav_bar button{
+        display: flex;
+    }
+
+    /* nav{
+        display: flex !important ; 
+    } */
+
+}
+
+
+@media screen and (max-width:600px){
+header{
+    padding: 0px 20px;
+}
+}
+/*========== Header section responsive end ============ */
+
+/* =========== Home section responsive start ==============  */
+
+@media screen and (max-width:960px){
+.singlePost{
+    width: 45%;
+}
+}
+
+@media screen and (max-width:830px){
+ 
+    .home_conainer{
+        width: 100%;
+
+    }
+
+    .main_body{
+       flex-direction: column;
+    }
+    .aside_container{
+        width: 100%;
+       
+    }
+}
+@media screen and (max-width:600px){
+    .main_body{
+        padding: 0px 20px;
+    }
+    .singlePost{
+        width: 100%;
+    }
+    .page_header{
+        padding:20px 10px;
+    }
+}
+
+/* =========== Home section responsive end ==============  */
+
+
+/* =========== single post responsive start ========== */
+@media screen and (max-width:830px){
+    .single_post_wrapper{
+        width: 100%;
+        flex-direction: column  ;
+        
+    }
+     
+    @media screen and (max-width:600px){
+        .image_boxx{
+ 
+            min-height: 400px;
+        } 
+
+        .main_body{
+            padding: 0px 10px;
+        }
+    }
+     
+}
+
+/* =========== single post responsive end ========== */
+
+
+/* ========== Aside responsive start ========== */
+
+@media screen and (max-width:822px){
+    .image_box.learge_box {
+        width:100%;
+        height: 220px;
+}
+
+.image_box {
+    width: 220px;
+    height: 80px;
+}
+
+.post_card {
+ 
+ 
+	justify-content: flex-start;
+ 
+}
+
+}
+/* ========== Aside responsive end ========== */
+
+
+
+ /* ========== footer section responsive start ============= */
+ 
+ @media screen and (max-width:860px){
+  
+    .footer_box{
+        width: 48%;
+    }
+    
+    
+ }
+ 
+ 
+ @media screen and (max-width:640px){
+  
+    .footer_box{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 2px solid var(--active-color);
+    }
+    
+    
+ }
+ 
+ @media screen and (max-width:600px){
+  
+    .layout {
+ 
+        padding: 0px 15px;
+    }
+    
+    
+ }
+ 
+ 
+ 
+ 
+ /* ========== footer section responsive end ============= */
+
+
+
+ .pagenot{
+    width: 100%;
+    background: url('./data/404-.webp');
+     background-position: center center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 90svh;
+     margin-top: 70px;
+ }
